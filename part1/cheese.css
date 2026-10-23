@@ -1,0 +1,56 @@
+body {
+    font-family: ff-meta-web-pro, sans-serif;
+    color: whitesmoke;
+    line-height: 1.2rem;
+    background-color: darkslategray;
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1 {
+    font-size: 1.9rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.latin {
+    text-emphasis: true;
+}
+
+#warning {
+    background-color: goldenrod;
+}
+
+blockquote {
+    border-color: black;
+    border-width: 0.1rem;
+    border-style: solid;
+    padding: 0.25rem;
+    padding-right: 0.25rem;
+    margin: 0 0 0 0;
+}
+
+a:hover {
+    color: lightseagreen;
+}
+
+a:focus {
+    border: 1px solid blue;
+    background-color: aquamarine;
+}
+
+legend {
+    color: red
+}
+
+/* Blue wins here because it's later in the file. It gets more "power" because its at the end of the file: i.e. most recent.*/
+legend {
+    color: blue
+}
