@@ -1,11 +1,16 @@
+/* 
+ * Pratyush Bhattacharya
+ * https://github.com/PratyushBhattacharya1/cse134b-hw3
+ */
+
 body {
-    font-family: ff-meta-web-pro, sans-serif;
+    font-family: sans-serif;
     color: whitesmoke;
-    line-height: 1.2rem;
+    line-height: 1.5;
     background-color: darkslategray;
     max-width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: auto;
+    padding: 1%;
 }
 
 h1 {
@@ -16,12 +21,8 @@ h2 {
     font-size: 1.5rem;
 }
 
-h3 {
-    font-size: 1.3rem;
-}
-
 .latin {
-    text-emphasis: true;
+    font-style: italic;
 }
 
 #warning {
@@ -29,12 +30,9 @@ h3 {
 }
 
 blockquote {
-    border-color: black;
-    border-width: 0.1rem;
-    border-style: solid;
+    border: 0.1rem solid black;
     padding: 0.25rem;
-    padding-right: 0.25rem;
-    margin: 0 0 0 0;
+    margin: auto;
 }
 
 a:hover {
@@ -46,11 +44,27 @@ a:focus {
     background-color: aquamarine;
 }
 
-legend {
-    color: red
+button:hover {
+    color: brown;
 }
 
-/* Blue wins here because it's later in the file. It gets more "power" because its at the end of the file: i.e. most recent.*/
+button:focus {
+    background-color: coral;
+}
+
+input:hover {
+    color: brown;
+}
+
+button:focus {
+    background-color: coral;
+}
+
 legend {
-    color: blue
+    color: red;
+}
+
+/* Blue wins here because it's later in the file. It gets more "power" because its at the end of the file and just as specific as the other legend.*/
+legend {
+    color: blue;
 }
