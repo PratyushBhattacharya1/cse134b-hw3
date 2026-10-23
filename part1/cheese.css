@@ -8,9 +8,9 @@ body {
     color: whitesmoke;
     line-height: 1.5;
     background-color: darkslategray;
-    max-width: 60%;
+    max-width: 60rem;
     margin: auto;
-    padding: 1%;
+    padding: 0.4rem;
 }
 
 h1 {
@@ -32,7 +32,11 @@ h2 {
 blockquote {
     border: 0.1rem solid black;
     padding: 0.25rem;
-    margin: auto;
+    margin: 0.2rem;
+
+    p {
+        margin: auto;
+    }
 }
 
 a:hover {
@@ -54,9 +58,10 @@ button:focus {
 
 input:hover {
     color: brown;
+    border: 1px solid blue;
 }
 
-button:focus {
+input:focus {
     background-color: coral;
 }
 
