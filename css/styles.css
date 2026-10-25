@@ -1,0 +1,74 @@
+:root {
+    color-scheme: light dark;
+
+    --main-font: Tahoma, sans-serif;
+
+    --bg-color: light-dark(#f9f9f7, #15202b);
+    --bg-accent-color: light-dark(#efeee8, #22303c);
+    --button-hover-color: light-dark(#e5e3d9, #192734);
+    --text-color: light-dark(#000000, #ffffff);
+    --accent-color: light-dark(#0F8017, #7FF087);
+    --max-page-width: 60rem;
+    --max-page-margin: auto;
+}
+
+html[data-theme="light"] {
+    color-scheme: light;
+}
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
+    color: var(--text-color);
+    accent-color: var(--accent-color);
+    max-width: var(--max-page-width);
+    margin: var(--max-page-margin);
+
+    header {
+        nav {
+            menu {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: var(--bg-accent-color);
+                display: flex;
+
+                li {
+                    a {
+                        display: inline-block;
+                        padding: 1.5em 2em;
+                        text-decoration: none;
+                    }
+
+                    a:hover {
+                        background-color: var(--button-hover-color);
+                    }
+
+                    a:focus {
+
+                    }
+                }
+
+                li:last-child {
+                    margin-left: auto;
+
+                    a {
+                        color: var(--bg-color);
+                        background-color: var(--accent-color);
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@view-transition {
+    navigation: auto;
+}
